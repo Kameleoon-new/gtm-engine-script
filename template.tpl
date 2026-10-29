@@ -70,8 +70,9 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const injectScript = require('injectScript');
 const log = require('logToConsole');
 const queryPermission = require('queryPermission');
+const encodeUriComponent = require('encodeUriComponent');
 
-const scriptUrl = 'https://' + data.siteCode + '.' + data.domainMenu + '/engine.js';
+const scriptUrl = 'https://' + encodeUriComponent(data.siteCode) + '.' + data.domainMenu + '/engine.js';
 
 if (!data.siteCode || !data.domainMenu) {
     log('[Kameleoon] Missing required configuration');

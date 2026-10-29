@@ -1,5 +1,7 @@
 homepage: "https://www.kameleoon.com"
 documentation: "https://github.com/Kameleoon-new/gtm-engine-script/blob/main/README.md"
 versions:
+    - sha: b0164f167985bd572db1b52b505ffeeb58121e4e
+      changeNotes: "Encode the site code with encodeUriComponent when building the engine script URL."
     - sha: 537f13ce3cf88e88c5e0975860fa9fea36205b11
       changeNotes: "Initial release of the Kameleoon GTM template."
